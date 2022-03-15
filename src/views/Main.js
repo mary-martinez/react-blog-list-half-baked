@@ -18,8 +18,8 @@ export default function Main() {
   return (
     <div>
       {blogs.map((blog) => (
-        <BlogCard key={blog.id} title={blog.title} subtitle={blog.subtitle} text={blog.text} image={blog.image} />
-        // <BlogCard key={blog.id} {...blog} />
+        // <BlogCard key={blog.id} title={blog.title} subtitle={blog.subtitle} text={blog.text} image={blog.image} />
+        <BlogCard key={blog.id} {...blog} />
 
       ))}
     </div>
